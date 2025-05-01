@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const backend_URI = "http://localhost:3000";
+const backend_URI = "${import.meta.env.VITE_BACKEND_URI}";
 
 const baseApiResponse = (data, isSuccess) => {
   return {
